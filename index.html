@@ -1,12 +1,12 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{% block title %}Easycode{% endblock %}</title>
+    <title>TEST</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="base.css">
+
 </head>
 <body>
   <div>
@@ -24,9 +24,6 @@
         <a href="/games/" class="dropbtn">Games</a> 
       </li> 
       
-      {% comment %} <li class="dropdown">
-        <a href="/setupData/" class="dropbtn">Setup Data</a> 
-      </li>   {% endcomment %}
       <li class="dropdown">
         <a href="/worlds/" class="dropbtn">Worlds</a> 
       </li>
@@ -81,11 +78,7 @@
       </li>
     </ul>
 </div>
-    <div id="wrapper">
-      {% block content %}
 
-      {% endblock %}
-    </div>
 
 </body>
 </html>
