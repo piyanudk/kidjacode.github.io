@@ -1,87 +1,87 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>TEST</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="base.css">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
 
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
 </head>
 <body>
-  <div>
-    <ul class="topnav">
-      <li><a href="/home/" class="dropbtn">Jump*Coding</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">TOI-Zero</a> 
-        <div class="dropdown-content">
-          <a href="/bmi/" >BMI Calculator</a> 
-          <a href="/carTax/">Tax : A1-024</a>
-          <a href="/roman/">Roman Numericals : A1-037 </a>     
-        </div>
-      </li>
-      <li class="dropdown">
-        <a href="/games/" class="dropbtn">Games</a> 
-      </li> 
-      
-      <li class="dropdown">
-        <a href="/worlds/" class="dropbtn">Worlds</a> 
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Image Gallery</a> 
-        <div class="dropdown-content">
-          <a href="/birdGallery/">Birds</a>
-          <a href="/catGallery/">Cats</a>
-          <a href="/dogGallery/">Dogs</a>          
-        </div>
-      </li>
-      <li class="dropdown">
-        <a href="/members/" class="dropbtn">Members</a> 
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Machine Learning</a> 
-        <div class="dropdown-content">
-          <a href="/predictSalary/">Predict Salary</a>
-          <a href="/predictSales/">Predict Sales</a>
-          <a href="/sentimentalAnalysis/">Sentimental Analysis</a>       
-        </div>
-      </li>
-      
-      <!-- <li class="dropdown">
-        <a href="#" class="dropbtn">Data Visualization</a> 
-        <div class="dropdown-content">
-          <a href="../templates/google_chart.html">Chart</a>
-          <a href="../templates/shapes.html">Shapes</a>
-          <a href="../templates/turtle.html">Turtle</a>
-        </div>
-      </li>   -->
-      <li class="dropdown" style="float:right;">
-        <a href="#" class="dropbtn">Sign In</a>
-        <div class="dropdown-content">
-        <a href="#">Profile</a>
-        <a href="#">Settings</a>
-        <a href="#">Logout</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">REST API</a> 
-        <div class="dropdown-content">
-          <a href="/api_users/">Users</a>
-          <a href="/api_books/">Books</a>     
-        </div>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Video Gallery</a> 
-        <div class="dropdown-content">
-          <a href="/videoGallery/">Songkran</a>   
-        </div>
-      </li>
-    </ul>
-</div>
 
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+
+<h2>Dropdown Menu in Navbar</h2>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
 
 </body>
 </html>
-
 
 
