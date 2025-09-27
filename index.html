@@ -1,13 +1,94 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My GitHub Website</title>
-  <link rel="stylesheet" href="style.css">
+    <title>{% block title %}Easycode{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my GitHub Pages website.</p>
-  <p>Testing changes and auto deploy</p>
-  <p>Testing changes and auto deploy</p>
+  <div>
+    <ul class="topnav">
+      <li><a href="/home/" class="dropbtn">Jump*Coding</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">TOI-Zero</a> 
+        <div class="dropdown-content">
+          <a href="/bmi/" >BMI Calculator</a> 
+          <a href="/carTax/">Tax : A1-024</a>
+          <a href="/roman/">Roman Numericals : A1-037 </a>     
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="/games/" class="dropbtn">Games</a> 
+      </li> 
+      
+      {% comment %} <li class="dropdown">
+        <a href="/setupData/" class="dropbtn">Setup Data</a> 
+      </li>   {% endcomment %}
+      <li class="dropdown">
+        <a href="/worlds/" class="dropbtn">Worlds</a> 
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Image Gallery</a> 
+        <div class="dropdown-content">
+          <a href="/birdGallery/">Birds</a>
+          <a href="/catGallery/">Cats</a>
+          <a href="/dogGallery/">Dogs</a>          
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="/members/" class="dropbtn">Members</a> 
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Machine Learning</a> 
+        <div class="dropdown-content">
+          <a href="/predictSalary/">Predict Salary</a>
+          <a href="/predictSales/">Predict Sales</a>
+          <a href="/sentimentalAnalysis/">Sentimental Analysis</a>       
+        </div>
+      </li>
+      
+      <!-- <li class="dropdown">
+        <a href="#" class="dropbtn">Data Visualization</a> 
+        <div class="dropdown-content">
+          <a href="../templates/google_chart.html">Chart</a>
+          <a href="../templates/shapes.html">Shapes</a>
+          <a href="../templates/turtle.html">Turtle</a>
+        </div>
+      </li>   -->
+      <li class="dropdown" style="float:right;">
+        <a href="#" class="dropbtn">Sign In</a>
+        <div class="dropdown-content">
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">REST API</a> 
+        <div class="dropdown-content">
+          <a href="/api_users/">Users</a>
+          <a href="/api_books/">Books</a>     
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Video Gallery</a> 
+        <div class="dropdown-content">
+          <a href="/videoGallery/">Songkran</a>   
+        </div>
+      </li>
+    </ul>
+</div>
+    <div id="wrapper">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+
 </body>
 </html>
+
+
+
