@@ -33,7 +33,7 @@ function updateScreen(idx) {
 }
 
 function readFileBird() {
-    const csvUrl = "../data/birds.csv";
+    const csvUrl = "../data/birds.csv"; 
     fetch(csvUrl)
     .then((response) => response.text())
     .then((text) => {
