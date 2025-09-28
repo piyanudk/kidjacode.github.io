@@ -27,8 +27,8 @@ function pickRandom() {
 }
 
 function updateScreen(idx) {  
-    alert(idx);
-    alert(rows[idx][7]);
+    // alert(idx);
+    // alert(rows[idx][7]);
     document.getElementById("id_bird").src = rows[idx][7];
     document.getElementById("bird_name").value = rows[idx][1];
     document.getElementById("bird_color").value = rows[idx][4];
